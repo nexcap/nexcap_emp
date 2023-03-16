@@ -48,7 +48,7 @@ var keyver = key;
 
 
 app.get("/",function(req,res){
-    res.render("index")
+    res.render("<h1>Scan QR</h1>")
 })
 
 
