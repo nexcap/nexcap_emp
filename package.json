@@ -4,6 +4,8 @@
   "description": "This is going to help to emp site",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
+    
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "nexcap",
