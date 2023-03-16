@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Nexcap - <%= FirstName %></title>
+  <meta name="title" content="Nexcap">
+  <meta name="description" content="Nexcap is going to help you fantastic web applications and mobile applications">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="img/favico.ico" type="image/ico">
+
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="gif" href="img/loding.gif">
+  <link rel="preload" as="image" href="img/hero-bg.jpg">
+  <link rel="preload" as="image" href="img/hero-slide-1.jpg">
+
+
+</head>
+
+<body>
+  <!-- 
+    - PRELODER 
+  -->
+
+
+  <div id="preloader"></div>
+
+
+
+  <!-- 
+    - HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+          <a href="#home" class="logo">
+            <img src="img/nexcap logo.png" width="150" height="60" alt="Nexcap logo">
+          </a>
+
+
+    </div>
+  </header>
+
+
+
+  <!-- 
+        - #HERO
+      -->
+
+  <main>
+    <article>
+      <section id="home" class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('img/modern-black.png')">
+        <div class="container">
+          <div class="slider-inner">
+            <ul class="slider-container" data-slider-container>
+              <li class="slider-item">
+                
+                  <img src="img/<%=Image%>/img.png"  alt="" class="img-cover" style="border-radius: 50%;">
+              
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-content">
+            <p class="hero-text"><span> EMPLOYEE ID</span> : <%= EmpID %></p>
+            <p class="hero-text"><span> FIRSTNAME</span> : <%= FirstName %></p>
+            <p class="hero-text"><span> LASTNAME </span> : <%= LastName %></p>
+            <p class="hero-text"><span> EMAIL ID </span> : <%= Email_ID %></p>
+            <p class="hero-text"><span> DATE OF BIRTH </span> : <%= DOB %></p>
+            <p class="hero-text"><span> BLOOD GROUP </span> : <%= Blood %></p>
+            <p class="hero-text"><span> GENDER </span> : <%= Sex %></p>
+            <p class="hero-text"><span>AGE </span> : <%= Age %></p>
+            <p class="hero-text"><span>PHONE NUMBER </span> : <%= phn_no %></p>
+          </div>
+      </section>
+      </ul>
+      </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- 
+        - #CTA
+      -->
+
+  <section class="cta" aria-label="call to action">
+    <div class="container">
+
+      <h2 class="h2 section-title">
+        Join our community by using our services and grow your business.
+      </h2>
+
+      <a href="https://discord.gg/WMT6vs6Tth" target="_blank" class="btn btn-primary">Join Now</a>
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="contact">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="img/footer logo.png" width="150" height="60" alt="nexcap logo">
+        </a>
+
+        <p class="footer-text">Copyrights &copy; 2023 Nexcap<br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100090683510579&mibextid=ZbWKwL" target="_blank"
+              class="social-link">
+              <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/nexcap_official" target="_blank" style="color: #55acee;" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://discord.gg/WMT6vs6Tth" target="_blank" style="color: #5865f2;" class="social-link">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://instagram.com/nexcap_official?igshid=YmMyMTA2M2Y=" target="_blank" id="insta"
+              class="social-link">
+              <i class="fab fa-instagram " id="insta"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/channel/UCstvTbmeBP2UlxMk172N8bA" target="_blank" style="color: #ed302f;"
+              class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            NO-37, Palani nagar, Chitteri, thorapadi, Vellore - 632002.
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:info@email.com" class="footer-link">info@nexcap.net</a>
+        </li>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link">8124361310</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="#about" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="#services" class="footer-link">Services</a>
+        </li>
+
+        <li>
+          <a href="#projects" class="footer-link">Projects</a>
+        </li>
+
+        <li>
+          <a href="/terms" class="footer-link">Terms of Use</a>
+        </li>
+
+        <li>
+          <a href="/privacy" class="footer-link">Privacy Policy</a>
+        </li>
+
+      </ul>
+
+      
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
