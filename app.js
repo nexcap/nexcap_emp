@@ -23,7 +23,8 @@ const EmpSchema = {
         Sex : String,
         Age : Number,
         phn_no : Number,
-        Image: String   
+        Image: String,
+        JobTitle: String   
  
 }
 
@@ -93,7 +94,8 @@ app.get("/:emp_ID", function(req,res){
                     Blood:found.Blood,
                     Sex:found.Sex,
                     Age:found.Age,
-                    phn_no:found.phn_no
+                    phn_no:found.phn_no,
+                    JobTitle:found.JobTitle
                 })
                 }
                 
