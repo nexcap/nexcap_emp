@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://0.0.0.0:27017/nexcap", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-nexcap:database3330@nexcap.utwcaig.mongodb.net/Nexcap", {useNewUrlParser: true, useUnifiedTopology: true });
 
 
 const EmpSchema = {
@@ -28,7 +28,7 @@ const EmpSchema = {
 }
 
 
-const Emp1 = mongoose.model("emp_nexcap", EmpSchema);
+const Emp1 = mongoose.model("emp_nexcaps", EmpSchema);
 
 
 function makeid(length) {
@@ -48,7 +48,7 @@ var keyver = key;
 
 
 app.get("/",function(req,res){
-    res.render("<h1>Scan QR</h1>")
+    res.send("<h1>Scan QR</h1>")
 })
 
 
@@ -73,12 +73,14 @@ app.get("/:emp_ID", function(req,res){
     if (key === keyver){
         Emp1.findOne({Emp_ID: req.params.emp_ID},function(err , found){
             if (err){
+                console.log(found)
                 res.send("Please use QR")
             } else{
                 if (found === null){
+                    console.log(found)  
                     res.send("<h1>Please use QR</h1>")
                 }else{
-                    console.log(found.Image)
+                    console.log(found)
                     res.render("index",
                 {
                     
@@ -98,7 +100,7 @@ app.get("/:emp_ID", function(req,res){
             }
         })
     }else{
-        res.send("Scan the QR")
+        res.send("<h1>Scan the QR</h1>")
     }
     
 })
