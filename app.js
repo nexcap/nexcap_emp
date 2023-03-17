@@ -78,10 +78,10 @@ app.get("/:emp_ID", function(req,res){
                 res.send("Please use QR")
             } else{
                 if (found === null){
-                    console.log(found)  
+                      
                     res.send("<h1>Please use QR</h1>")
                 }else{
-                    console.log(found)
+                    
                     res.render("index",
                 {
                     
